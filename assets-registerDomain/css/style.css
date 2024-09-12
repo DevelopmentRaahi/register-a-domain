@@ -768,5 +768,71 @@ footer,.footer-section{
 
 
 /*--------------------------------------------------------------
-# Sections General
+# form section
 --------------------------------------------------------------*/
+:root{
+  --input-bg-color:#003666;
+  --input-button-color:#fab400;
+}
+.d-set-row{
+ background-color:var(--input-bg-color);
+}
+.d-set-input {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.d-set-input form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-set-input form > * {
+  flex: 1 1 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  row-gap: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.df-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease;
+}
+
+.df-button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+  .d-set-input form > * {
+    flex: 1 1 45%;
+  }
+
+  .df-button {
+    flex: 1 1 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .d-set-input form > * {
+    flex: 1 1 20%;
+  }
+
+  .df-button {
+    flex: 1 1 20%;
+  }
+}
+
