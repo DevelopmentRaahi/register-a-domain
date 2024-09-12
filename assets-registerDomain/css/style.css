@@ -783,12 +783,15 @@ footer,.footer-section{
 }
 
 .d-set-input form {
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   align-items: center;
 }
+
+
 
 .d-set-input form > * {
   flex: 1 1 100%;
