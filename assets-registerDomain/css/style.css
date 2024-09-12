@@ -775,8 +775,11 @@ footer,.footer-section{
   --input-button-color:#fab400;
 }
 .d-set-row{
- background-color:var(--input-bg-color);
+ background:linear-gradient(#1a232aa2,#08243bb0 ), url('../img/bglines.jpg') ;
+ background-position: center;
+ background-size: cover;
 }
+
 .d-set-input {
   width: 100%;
   padding: 100px 0;
@@ -800,9 +803,16 @@ footer,.footer-section{
   row-gap: 1rem;
   border-radius: 5px;
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
+.d-set-input form input, .d-set-input form select option{
+  color: #0a101c7e;
+
+}
+.d-set-input form select option:hover, .d-set-input form select option:valid{
+  background-color: rgb(5, 61, 140) !important;
+}
 .df-button {
   background-color: #007bff;
   color: #fff;
@@ -811,7 +821,7 @@ footer,.footer-section{
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   transition: background-color 0.3s ease;
 }
 
