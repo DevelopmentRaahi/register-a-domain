@@ -493,15 +493,16 @@ $des_heading_color: #5b72a0;
     // background-color: rgb(250, 251, 255);
      font-family: "Barlow Semi Condensed", sans-serif;
     padding: 7rem 0rem;
-   background-color: #c4d1dc1f;
+    background-color: #c4d1dc1f;
 
     .first_section_para {
         padding: 0.2rem 0rem 0rem 1rem;
 
-        h2 {
+        h1 {
+            font-size: 3.4rem;
             color: $heading_color;
-            font-weight: 800;
-            padding: 0.5rem 0rem;
+            font-weight: 600;
+            
         }
 
         p {
@@ -515,7 +516,13 @@ $des_heading_color: #5b72a0;
             margin: 0 auto;
         }
     }
-
+ @media screen and (max-width: 992px) {
+    .first_section_para{
+        h1{
+            font-size: 2rem;
+        }
+    }
+ }
     .row_center {
         margin: auto;
     }

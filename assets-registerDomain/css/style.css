@@ -572,21 +572,23 @@ footer,.footer-section{
   
 }
 .section-title h2 {
+
     font-size: 13px;
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 4px 20px;
     margin: 0;
     text-align: center;
-    color: #4154f1;
+    color: #3e3e41;
     /* background-color: #edecfc; */
     text-transform: uppercase;
     border-radius: 50px;
     
 }
 .section-title p {
+  
     color: #012970;
-    margin: 10px 0 0 0;
+    margin: 10px 0 10px 0;
     font-size: 32px;
     font-weight: 600;
     font-family: var(--heading-font);
@@ -797,7 +799,7 @@ footer,.footer-section{
 
 
 .d-set-input form > * {
-  flex: 1 1 100%;
+  flex: 1 1  100%;
   padding: 10px;
   border: 1px solid #ccc;
   row-gap: 1rem;
