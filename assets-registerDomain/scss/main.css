@@ -353,10 +353,10 @@ body {
 .desc_section_bg .first_section_para {
   padding: 0.2rem 0rem 0rem 1rem;
 }
-.desc_section_bg .first_section_para h2 {
+.desc_section_bg .first_section_para h1 {
+  font-size: 3.4rem;
   color: rgb(47, 78, 126);
-  font-weight: 800;
-  padding: 0.5rem 0rem;
+  font-weight: 600;
 }
 .desc_section_bg .first_section_para p {
   padding: 0rem 0rem 0rem 0.5rem;
@@ -367,6 +367,11 @@ body {
 .desc_section_bg .first_section_para .desc_section_bg-para {
   width: 95%;
   margin: 0 auto;
+}
+@media screen and (max-width: 992px) {
+  .desc_section_bg .first_section_para h1 {
+    font-size: 2rem;
+  }
 }
 .desc_section_bg .row_center {
   margin: auto;
