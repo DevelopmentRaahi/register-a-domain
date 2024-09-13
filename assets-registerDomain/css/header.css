@@ -545,7 +545,7 @@ h6 {
 .logo-slide{
 display: inline-block; 
 white-space: nowrap;
-animation: slider 70s linear  infinite  ; 
+animation: slider 7s linear  infinite  ; 
 }
 
 .logo-slide img{
@@ -554,6 +554,7 @@ width: 10rem;
 height: auto;
 margin: 0 1rem;
 opacity: .9;
+mix-blend-mode: multiply;
 }
 .logos::before, .logos::after{
   content: " ";    
@@ -583,7 +584,7 @@ opacity: .9;
       transform: translateX(10%);             
   }    
   100%{
-      transform: translateX(-90%);
+      transform: translateX(-100%);
   }    
 }
 .section_cumtomer{
