@@ -797,7 +797,7 @@ footer,.footer-section{
   padding: 5px 0 20px 0;
 }
  .d-set-input h1{
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   font-weight: 600;
   padding: 0 0 20px 0;
  }
@@ -968,3 +968,8 @@ footer,.footer-section{
   filter: grayscale(1);
   cursor: pointer;
 } */
+@media screen and (max-width: 1023px) {
+  .desc_section_bg{
+   padding: 2rem 0 !important;
+  }
+}
