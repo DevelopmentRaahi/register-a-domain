@@ -948,7 +948,7 @@ footer,.footer-section{
   transition: filter 0.5s;
   cursor: pointer;
 }
-.box-model .models:hover .item:not(:hover){  
+/* .box-model .models:hover .item:not(:hover){  
   filter: grayscale(1);
   cursor: pointer;
-}
+} */
