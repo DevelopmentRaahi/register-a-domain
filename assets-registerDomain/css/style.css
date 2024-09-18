@@ -786,6 +786,22 @@ footer,.footer-section{
   width: 100%;
   padding: 100px 0;
 }
+ .d-set-input h1{
+  font-size: 4.4rem;
+  font-weight: 600;
+  padding: 0 0 20px 0;
+ }
+@media screen and (max-width: 876px) {
+  .d-set-input {
+  width: 100%;
+  padding: 5px 0 20px 0;
+}
+ .d-set-input h1{
+  font-size: 3.4rem;
+  font-weight: 600;
+  padding: 0 0 20px 0;
+ }
+}
 
 .d-set-input form {
   font-family: "Poppins", sans-serif;
