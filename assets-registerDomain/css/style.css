@@ -962,11 +962,12 @@ footer,.footer-section{
 .models .item img{
   display: grid;
   justify-self: center;
-  align-self: center;
-  background-color: transparent;
-  mix-blend-mode: multiply; 
+  align-self: center; 
   border-radius: 10px 7px; 
-  max-width: 50%;
+  max-width: 50%; 
+  object-fit: cover;
+  padding: 10px 12px;
+  background-color: rgb(255, 255, 255);
   filter: drop-shadow( 0 0 10px rgba(0,0,0,0.1));
 }
 
