@@ -957,7 +957,7 @@ footer,.footer-section{
 }
 .models.visibles{
   visibility: visible;
-  animation:moveUpDown 15s ease-in-out  infinite ;
+  animation:moveUpDown 30s linear  infinite ;
 }
 .models .item img{
   display: grid;
@@ -966,7 +966,44 @@ footer,.footer-section{
   background-color: transparent;
   mix-blend-mode: multiply; 
   border-radius: 10px 7px; 
+  max-width: 60%;
   filter: drop-shadow( 0 0 10px rgba(0,0,0,0.1));
+  animation: imagRotate 3.5s linear 1s infinite;
+}
+@keyframes imagRotate {
+  0%{
+    transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+  }
+  10%{
+    transform: translateX(3px) translateY(3px) rotate(3deg) scale(1.05);
+  }
+  20%{
+    transform: translateX(-3px) translateY(-3px) rotate(-3deg) scale(1.05);
+  }
+  30%{
+    transform: translateX(2px) translateY(2px) rotate(2deg) scale(1);
+  }
+  40%{
+    transform: translateX(-2px) translateY(-2px) rotate(-2deg) scale(1);
+  }
+  50%{
+    transform: translateX(3px) translateY(3px) rotate(3deg) scale(1.05);
+  }
+  60%{
+    transform: translateX(-3px) translateY(-3px) rotate(-3deg) scale(1.05);
+  }
+  70%{
+    transform: translateX(2px) translateY(2px) rotate(2deg) scale(1);
+  }
+  80%{
+    transform: translateX(-2px) translateY(-2px) rotate(-2deg) scale(1);
+  }
+  90%{
+    transform: translateX(3px) translateY(3px) rotate(3deg) scale(1.05);
+  }
+  100%{
+    transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+  }
 }
  .models.visibles{
   visibility: visible;
@@ -979,7 +1016,7 @@ footer,.footer-section{
 }
 @media screen and (max-width: 1024px) {
   .models{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
   .models .item img{
@@ -1002,12 +1039,13 @@ footer,.footer-section{
   .models{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    column-gap: 60px;
+    column-gap: 40px;
+    left: 60%;
     
   }
   .models .item img{
       margin: initial;
-      width: 50vmin;
+      width: 80vmin;
     }
 }
 .item:nth-child(2n-1){
@@ -1021,15 +1059,15 @@ footer,.footer-section{
   0%{
    top: 100%;
    opacity: 0;
-   transform: translate(-50%, -50%) scale(0.5);
+   transform: translate(-50%, -50%) scale(0.5) ;
   }
-  30%{
+  10%{
     opacity:1;
-    transform: translate(-50%, -50%) scale(0.8);
+    transform: translate(-50%, -50%) scale(0.8) ;
   }
   100%{
    top: -100%;
    opacity: 1;
-   transform: translate(-50%, -50%) scale(1.1);
+   transform: translate(-50%, -50%) scale(1.1) ;
   }
 }
