@@ -3,7 +3,7 @@ let bubbles = document.querySelector(".models");
  (function bubblesVisible () {
   let bublleVisible = setInterval(function () {
     bubbles.classList.add("visibles"); 
-  }, 5000)
+  }, 2000)
       
 })()
 
