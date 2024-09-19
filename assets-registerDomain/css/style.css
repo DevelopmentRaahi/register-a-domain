@@ -957,7 +957,7 @@ footer,.footer-section{
 }
 .models.visibles{
   visibility: visible;
-  animation:moveUpDown 20s ease  infinite ;
+  animation:moveUpDown 15s ease-in-out  infinite ;
 }
 .models .item img{
   display: grid;
@@ -999,10 +999,23 @@ footer,.footer-section{
   }
 }
 @media screen and (max-width: 528px) {
+  .models{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 60px;
+    
+  }
   .models .item img{
       margin: initial;
+      width: 50vmin;
     }
 }
+.item:nth-child(2n-1){
+  margin-top: 20px; 
+  }
+.item:nth-child(2n){
+   margin-top: 50px; 
+  }
 
 @keyframes moveUpDown {
   0%{
@@ -1015,7 +1028,7 @@ footer,.footer-section{
     transform: translate(-50%, -50%) scale(0.8);
   }
   100%{
-   top: -90%;
+   top: -100%;
    opacity: 1;
    transform: translate(-50%, -50%) scale(1.1);
   }
