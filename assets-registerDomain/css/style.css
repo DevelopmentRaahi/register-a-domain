@@ -957,7 +957,7 @@ footer,.footer-section{
 }
 .models.visibles{
   visibility: visible;
-  animation:moveUpDown 14s ease  infinite ;
+  animation:moveUpDown 20s ease  infinite ;
 }
 .models .item img{
   display: grid;
