@@ -929,24 +929,8 @@ footer,.footer-section{
 
  
 
-.box-model .models{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 50px;
-  align-items: center;
-  justify-items: center; 
-  text-align: center;
- 
-}
 
-.models .item img{
-  width: 180px;
-}
-.box-model .models .item{
-  transition: filter 0.5s;
-  cursor: pointer;
-}
+
 /* .box-model .models:hover .item:not(:hover){  
   filter: grayscale(1);
   cursor: pointer;
@@ -958,11 +942,7 @@ footer,.footer-section{
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
   width: 100%;
-  height: 100%;
-}
-.models{
-  /* border: 1px solid gray; */
-  display: grid;
+  height: 100vh; 
   position: fixed;
   top: 50%;
   left: 50%;
@@ -970,44 +950,63 @@ footer,.footer-section{
   transform: translate(-50%, -50%);
   transition: transform 0.5s;
   z-index: 5555;
-  /* animation:moveUpDown 7s ease 0.5s infinite ; */
+  align-items: center;
+  justify-items: center;
+  animation:moveUpDown 7s ease 0.5s infinite ;
   ; 
 }
 .models.visibles{
   visibility: visible;
-  animation:moveUpDown 7s ease  infinite ;
+  /* animation:moveUpDown 7s ease  infinite ; */
 }
 .models .item img{
+  display: grid;
   justify-self: center;
   align-self: center;
   background-color: transparent;
-  mix-blend-mode: multiply;
+  mix-blend-mode: multiply; 
 }
  .models.visibles{
   visibility: visible;
  }
- 
- .models .item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
- }
-
+@media screen and (max-width: 1400px) {
+  .models{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .models{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .models .item img{
+    width:90%;
+  }
+}
+@media screen and (max-width: 764px) {
+  .models{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .models .item img{
+    width: 30vmin;
+  }
+}
 
 @keyframes moveUpDown {
   0%{
-   top: 100%;
-   opacity: 0.6;
+   top: 80%;
+   opacity: 0;
    transform: translate(-50%, -50%) scale(0.5);
   }
-  40%{
-    opacity:0.8;
-    transform: translate(-50%, -50%) scale(0.8);
+  30%{
+    opacity:1;
+    transform: translate(-50%, -50%) scale(0.9);
   }
   100%{
    top: -100%;
    opacity: 1;
-   transform: translate(-50%, -50%) scale(1);
+   transform: translate(-50%, -50%) scale(1.1);
   }
 }
