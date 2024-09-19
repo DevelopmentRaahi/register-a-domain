@@ -956,6 +956,7 @@ footer,.footer-section{
 } */
 .box-model .models .item {
   width: 100%;  
+  animation:moveUpDown 4s ease 1s infinite alternate;
 }
 .models .item img{
   width: 180px;
@@ -971,5 +972,19 @@ footer,.footer-section{
 @media screen and (max-width: 1023px) {
   .desc_section_bg{
    padding: 2rem 0 !important;
+  }
+}
+@keyframes moveUpDown {
+  0%{
+    transform: translateY(0) scale(0.8);
+  }
+  40%{
+    transform: translateY(-50px) scale(1.1);
+  }
+  80%{
+    transform: translateY(50px) scale(1);
+  }
+  100%{
+    transform: translateY(0) scale(0.9);
   }
 }
