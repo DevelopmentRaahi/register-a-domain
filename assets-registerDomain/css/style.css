@@ -927,12 +927,7 @@ footer,.footer-section{
  /* grid container */
 
 
- .box-model{
-  padding: 20px 0;
-  width: 100%;
-  height: 100%;
-  /* display: none; */
- } 
+ 
 
 .box-model .models{
   display: grid;
@@ -945,26 +940,6 @@ footer,.footer-section{
  
 }
 
-@media screen and (max-width: 1023px) {
-  .box-model .models{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 676px) {
-  .box-model .models{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-  }
-}
-/* .box-model .models >.item{
-  grid-row: var(--r);
-  grid-column: var(--c);
-} */
-.box-model .models .item {
-  width: 100%;  
-  /* animation:moveUpDown 4s ease 1s infinite alternate; */
-}
 .models .item img{
   width: 180px;
 }
@@ -976,43 +951,58 @@ footer,.footer-section{
   filter: grayscale(1);
   cursor: pointer;
 } */
-@media screen and (max-width: 1023px) {
-  .desc_section_bg{
-   padding: 2rem 0 !important;
-  }
-}
 
- .logo-hide_button{
-  position:fixed;
-  top:50%;
-  left:50%;
+.models{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
   width: 100%;
-  height: 100vh;
-  z-index: 4000;
+  height: 100%;
+}
+.models{
+  /* border: 1px solid gray; */
+  display: grid;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  animation:moveUpDown 5s ease 1s 4 ;
-  /* animation-delay: var(10s/10)*(var(--c) - 1); */
-  overflow: hidden;
+  transition: transform 0.5s;
+  z-index: 5555;
+  animation:moveUpDown 7s ease 0.5s infinite ;
+  ; 
+}
+.models .item img{
+  justify-self: center;
+  align-self: center;
+  background-color: transparent;
+  mix-blend-mode: multiply;
+}
+ .models.visibles{
+  visibility: visible;
  }
- .models .item img{
+ 
+ .models .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
+
  }
+
+
 @keyframes moveUpDown {
   0%{
    top: 100%;
    opacity: 0.6;
-   transform:  translate(-50%, -50%) scale(0.5);
+   transform: translate(-50%, -50%) scale(0.5);
   }
-  60%{
-    opacity: 0.9;
-    transform:   translate(-50%, -50%) scale(1);
+  40%{
+    opacity:0.8;
+    transform: translate(-50%, -50%) scale(0.8);
   }
   100%{
    top: -100%;
    opacity: 1;
-   transform: translate(-50%, -50%) scale(1.2);
+   transform: translate(-50%, -50%) scale(1);
   }
 }
