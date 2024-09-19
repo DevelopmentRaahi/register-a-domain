@@ -1,11 +1,11 @@
 
-// let bubbles = document.querySelector(".logo-hide_button");
-//  (function bubblesVisible () {
-//   let bublleVisible = setInterval(function () {
-//     bubbles.classList.add("visibles"); 
-//   }, 2000)
+let bubbles = document.querySelector(".models");
+ (function bubblesVisible () {
+  let bublleVisible = setInterval(function () {
+    bubbles.classList.add("visibles"); 
+  }, 2000)
       
-// })()
+})()
 
 
 let mybutton = document.getElementById("btn-back-to-top");

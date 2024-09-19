@@ -966,11 +966,16 @@ footer,.footer-section{
   position: fixed;
   top: 50%;
   left: 50%;
+  visibility: hidden;
   transform: translate(-50%, -50%);
   transition: transform 0.5s;
   z-index: 5555;
-  animation:moveUpDown 7s ease 0.5s infinite ;
+  /* animation:moveUpDown 7s ease 0.5s infinite ; */
   ; 
+}
+.models.visibles{
+  visibility: visible;
+  animation:moveUpDown 7s ease  infinite ;
 }
 .models .item img{
   justify-self: center;
