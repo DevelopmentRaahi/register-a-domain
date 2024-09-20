@@ -935,7 +935,7 @@ footer,.footer-section{
   filter: grayscale(1);
   cursor: pointer;
 } */
-
+ 
 .models{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
